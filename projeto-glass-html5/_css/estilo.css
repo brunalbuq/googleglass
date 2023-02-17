@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 body{
     background-color: white;
@@ -13,6 +13,7 @@ p {
 /* Formatação de imagens com legendas */
 
 figure.foto-legenda{
+    position: relative;
     border: 8px solid white;
     /*criar sombra*/
     box-shadow: 1px 1px 4px black;
@@ -28,7 +29,7 @@ figure.foto-legenda figcaption{
     opacity: 0;
     position: absolute;
     top: 0px;
-    background-color: rgba(0,0,0, .4);
+    background-color: rgba(0,0,0,.4);
     color: white;
     width: 100%;
     height: 100%;
@@ -37,6 +38,6 @@ figure.foto-legenda figcaption{
     transition: opacity 1s;
 }
 
-figure.foto-legenda:has figcaption{
+figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
