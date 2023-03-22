@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
     <link rel = "stylesheet"  href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
 </head>
 <script languagem = "javascript" src="_javascript/funcoes.js"></script>
 <body>
@@ -27,48 +28,57 @@
             <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
         </ul>
     </nav>
+</header>
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contatos</h1>
+                <h2>por Bruna Albuquerque</h2>
+                <h3 class="direita">Atualizado em 03/Março/2023</h3>
+            </hgroup>
+        </header>
 
-    Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form method="post" id="fContato" action="brudealbuq@gmail.com">
+    <br id="usuario"><legend>Identificação do Usuário</legend>
+        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+        <p>Senha: <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"/></p>
+        <p>E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="20"/></p>
+        <fieldset id="sexo"><legend>Sexo</legend>
+            <input type="radio" name="tSexo" id="cSexo" checked><label for="cMasc">Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cSexo" /><label for="cFem">Feminino</label>
+        </fieldset>
+        <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc" /></p> 
+    </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+    <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav,..."/></p>
+    <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+    <p>Estado:</p>
+    <p>Cidade:</p>
+    </fieldset>
 
-Mensagem do Usuário
+    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
     Grau de Urgência:
     Mensagem:
+    </fieldset>
 
-Quero um Google Glass
+    <fieldset id="pedido"><legend>Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
+    </fieldset>
 
 
 [BOTÃO ENVIAR]
-
-</header>
-
-
-
+</form>
     <footer id="rodape">
         <p>Copyright &copy; 2013 - by Bruna Albuquerque <br/>
-             <a href="https://www.facebook.com/brub.albuquerque" target="_blank">Facebook </a> | 
-             <a href="https://twitter.com/brunalbuq" target="_blank"> Twitter</a> </p>
+            <a href="https://www.facebook.com/brub.albuquerque" target="_blank">Facebook </a> | 
+            <a href="https://twitter.com/brunalbuq" target="_blank"> Twitter</a> </p>
     </footer>
 </div>
 </body>
